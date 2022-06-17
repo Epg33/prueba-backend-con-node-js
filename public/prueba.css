@@ -1,0 +1,14 @@
+*{
+  font-family: 'Roboto Mono', monospace;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img{
+  height: 11%;
+  width: 10%;
+}

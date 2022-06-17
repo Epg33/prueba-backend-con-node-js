@@ -1,0 +1,11 @@
+*{
+  font-family: 'Roboto Mono', monospace;
+}
+
+body{
+  margin: none;
+}
+
+input{
+  color: black
+}
