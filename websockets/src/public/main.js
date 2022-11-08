@@ -1,10 +1,7 @@
 import {loadNotes} from './socket.js';
-
+import {onHandleSubmit} from './ui.js'
 loadNotes();
 
 const noteForm = document.getElementById('noteForm');
 
-noteForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  console.log(noteForm['title'].value, noteForm['description'].value);
-})
+noteForm.addEventListener('submit', onHandleSubmit)

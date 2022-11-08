@@ -8,5 +8,11 @@ export default (io) => {
       io.emit('loadNotes', notes)
     };
     emitNote();
+
+    socket.on('newNote', async data => {
+      const newNote =new Note(data)
+      const savedNote = await newNote.save();
+      console.log(savedNote);
+    })
   });
 };
